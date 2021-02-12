@@ -1,0 +1,46 @@
+{
+    "name": "mitsuru793/index-dumper",
+    "description": "Dump index of string on php",
+    "type": "library",
+    "homepage": "https://github.com/mitsuru793/php-index-dumper",
+    "license": "MIT",
+    "keywords": [
+        "dump",
+        "index",
+        "string",
+        "table"
+    ],
+    "authors": [
+        {
+            "name": "mitsuru793",
+            "email": "mitsuru793@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit --color=always",
+        "analyze": "phpstan analyze ./src"
+    },
+    "bin": ["bin/index-dump"],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/console": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2",
+        "phpstan/phpstan": "^0.12.65",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "IndexDumper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UnitTest\\": "tests/unit/",
+            "TestHelper\\": "tests/helper/"
+        }
+    }
+}
