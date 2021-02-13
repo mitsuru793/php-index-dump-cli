@@ -1,0 +1,23 @@
+language: php
+
+php:
+  - '7.4'
+  - '8.0'
+
+matrix:
+  fast_finish: true
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_script:
+  - travis_retry composer install -n
+
+script:
+  - composer analyze
+  - composer test
+
+# Use Travis' new container-based infrastructure.
+# See http://docs.travis-ci.com/user/migrating-from-legacy/#How-can-I-use-container-based-infrastructure%3F
+sudo: false

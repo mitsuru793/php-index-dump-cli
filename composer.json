@@ -18,8 +18,8 @@
         }
     ],
     "scripts": {
-        "test": "phpunit --color=always",
-        "analyze": "phpstan analyze ./src"
+        "analyze": "phpstan analyze ./src",
+        "test": "phpunit --color=always"
     },
     "bin": ["bin/index-dump"],
     "require": {
