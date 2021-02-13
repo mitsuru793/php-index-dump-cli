@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mitsuru793/php-index-dump-cli.svg?branch=master)](https://travis-ci.org/mitsuru793/php-index-dump-cli)
+
 # Index Dumper Cli
 
 ## Summary
